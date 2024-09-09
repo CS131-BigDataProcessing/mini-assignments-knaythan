@@ -1,0 +1,5 @@
+50 goodluck.txt
+This is the result of the "wc -l goodluck.txt" command, which gets the number of lines in the goodluck.txt file.
+
+466 goodluck.txt
+This is the reulst of the "wc -w goodluck.txt" command, which gets the number of words in the goodluck.txt file.
