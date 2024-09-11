@@ -1,0 +1,6 @@
+#!/bin/bash
+
+FIRST_NAME=$1
+MIDDLE_NAME=$2
+LAST_NAME=$3
+echo "Hello, $FIRST_NAME $MIDDLE_NAME $LAST_NAME"
