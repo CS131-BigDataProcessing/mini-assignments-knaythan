@@ -1,0 +1,12 @@
+    1  history -w
+    2  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | uniq
+    3  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | sort | uniq
+    4  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort
+    5  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort | uniq
+    6  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort
+    7  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort | uniq
+    8  cd ..
+    9  cd mini-assignments-knaythan/
+   10  mkdir cohnn_A6
+   11  cd cohnn_A6
+   12  history > a6_cmds.log
