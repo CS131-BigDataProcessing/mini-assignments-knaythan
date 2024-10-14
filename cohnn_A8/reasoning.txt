@@ -1,0 +1,17 @@
+# Reasoning for Preprocessing Airbnb NY Dataset
+
+## Identify Missing Values
+There were multiple steps to do this.
+First, we had to remove all the newlines in the csv that weren't used to separate rows as this messed up the `awk` function as it separates records based on newlines.
+Second, we replaced any leading and trailing spaces with an empty string in case there were any that prevented us from detecting missing values.
+Third, we replaced any missing values with NA, as we don't know what effect replacing numbers with 0's would have. 
+Fourth and finally, for our remove function, we just searched if a line had ',NA', ',NA,', or 'NA,' and removed that line from the csv file.
+
+## Remove Duplicate Entries
+Duplicate entries can skew analysis results. We removed duplicates using `awk` to ensure each entry is unique.
+
+## Identifying and Handling Outliers
+Outliers can distort statistical analysis, so we identified outliers in the "price" column by calculating the mean and removing entries that exceed three times the mean price.
+
+## Conclusion
+These preprocessing steps ensure the dataset is clean and ready for analysis, making it suitable for merging with other Airbnb datasets from different regions.
