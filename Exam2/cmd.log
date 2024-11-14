@@ -1,0 +1,359 @@
+    1  history -w
+    2  history -w
+    3  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | uniq
+    4  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | sort | uniq
+    5  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort
+    6  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort | uniq
+    7  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort
+    8  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort | uniq
+    9  cd ..
+   10  cd mini-assignments-knaythan/
+   11  mkdir cohnn_A6
+   12  cd cohnn_A6
+   13  history > a6_cmds.log
+   14  cat a6_cmds.log 
+   15  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | sort | uniq > airline_inquiry.txt
+   16  cp ../../CS131_fa24_datafiles/Lec08/airline_stats.csv ./
+   17  ll
+   18  awk -F',' '{print $4}' airline_stats.csv | grep -v '^$' | sort | uniq > airline_inquiry.txt
+   19  head airline_inquiry.txt 
+   20  vi airline_inquiry.txt
+   21  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort >> airline_inquiry.txt
+   22  vi airline_inquiry.txt 
+   23  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' input.csv | sort >> airline_inquiry.txt 
+   24  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort >> airline_inquiry.txt 
+   25  vi airline_inquiry.txt 
+   26  cd ..
+   27  git add cohnn_A6/
+   28  git commit -m "Assignment A6"
+   29  git push
+   30  cd ..
+   31  cd CS131_fa24_datafiles/
+   32  cd Lec09
+   33  cd Lec08
+   34  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | count
+   35  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort | uniq -c
+   36  cd ..
+   37  cd .
+   38  cd ..
+   39  mini-assignments-knaythan/
+   40  cd mini-assignments-knaythan/
+   41  cd cohnn_A6/
+   42  ll
+   43  vi airline_inquiry.txt 
+   44  cd ..
+   45  CS131_fa24_datafiles/
+   46  cd cs
+   47  cd CS131_fa24_datafiles/
+   48  cd Lec08
+   49  l
+   50  ll
+   51  awk -F',' -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort | uniq -c
+   52  awk -F',' '$1 > 10 {print $4}' airline_stats.csv | sort | uniq -c
+   53  lh
+   54  ll
+   55  cd CS131_fa24_datafiles/
+   56  git pull origin main
+   57  ll
+   58  cd ..
+   59  cd cohnn_A4_shell/
+   60  ll
+   61  cd ..
+   62  cd CS131_fa24_datafiles/
+   63  cd Lec08
+   64  ll
+   65  cp airline_stats.csv ../../mini-assignments-knaythan/
+   66  cd .. ..
+   67  cd ../../
+   68  cd mini-assignments-knaythan/
+   69  ll
+   70  mkdir cohnn_A7
+   71  mv airline_stats.csv cohnn_A7
+   72  ll
+   73  cd cohnn_A7
+   74  ll
+   75  sed -f subs_file airline_stats.csv > transformed_airline_stats.csv
+   76  touch subs_file.srt
+   77  sed -f subs_file airline_stats.csv > transformed_airline_stats.csv
+   78  vi subs_file.srt 
+   79  sed -f subs_file airline_stats.csv > transformed_airline_stats.csv
+   80  ll
+   81  sed -f subs_file.srt airline_stats.csv > transformed_airline_stats.csv
+   82  cat transformed_airline_stats.csv 
+   83  head transformed_airline_stats.csv 
+   84  vi calc_avg_delay.sh
+   85  sh calc_avg_delay.sh
+   86  cat calc_avg_delay.sh 
+   87  cat average_carrier_delay.csv 
+   88  head average_carrier_delay.csv 
+   89  vi calc_avg_delay.sh American
+   90  sh calc_avg_delay.sh American
+   91  head average_carrier_delay.csv 
+   92  head airline_stats.csv 
+   93  vi calc_avg_delay.sh American
+   94  sh calc_avg_delay.sh 
+   95  head average_carrier_delay.csv 
+   96  cat average_carrier_delay.csv 
+   97  vi clean_csv.sh
+   98  sh clean_csv.sh 
+   99  head cleaned_airline_stats.csv 
+  100  wc -l airline_stats.csv 
+  101  wc -l cleaned_airline_stats.csv 
+  102  awk -F, '{for(i=1;i<=NF;i++) if($i=="") print NR,i}' airline_stats.csv
+  103  ll
+  104  ll
+  105  scp
+  106  scp -r "/c/Users/natha/Documents/CS 131/P1Proposal" ncohnfa24@172.20.25.9:
+  107  lh
+  108  mkdir P1
+  109  ssh 172.20.25.9 /usr/bin/true
+  110  lh
+  111  cd .bashrc
+  112  vi .bashrc
+  113  source .bashrc
+  114  ll
+  115  lh
+  116  vi .bashrc
+  117  source .bashrc 
+  118  source --help
+  119  --help
+  120  cd ..
+  121  cd ncohnfa24/
+  122  lh
+  123  source .bashrc 
+  124  help
+  125  source help
+  126  source ~/.bashrc
+  127  lh
+  128  source ~/.bash_profile 
+  129  cd etc
+  130  lh
+  131  vi .bashrc
+  132  source .bashrc
+  133  ssh 172.20.25.9 /usr/bin/true
+  134  /home/
+  135  home
+  136  /home
+  137  ll /home
+  138  /home/ncohnfa24
+  139  cd ll
+  140  ll ..
+  141  ll ../..
+  142  /home ll
+  143  ll /home
+  144  ll /home/..
+  145  ll ../../../..
+  146  ll ../../..
+  147  ll scratch/..
+  148  ll ../../../..
+  149  ll ../../
+  150  cd ..
+  151  cd scratch/
+  152  cd FA24_CS131_Jessica/
+  153  cd ncohnfa24/
+  154  ll
+  155  cd P1
+  156  ll
+  157  lh
+  158  cd P1Proposal/
+  159  ll
+  160  cd ..
+  161  mv P1Proposal/* .
+  162  ll
+  163  rm P1Proposal/
+  164  rm -r P1Proposal/
+  165  ll
+  166  mkdir datasets
+  167  find . -maxdepth 1 -type f -exec mv {} ./datasets \;
+  168  ll
+  169  ll datasets
+  170  cd datasets/
+  171  unzip ACSST5Y2020.S1501_2024-10-02T113129.zip 
+  172  ll
+  173  rm ACSST5Y2020.S1501-Column-Metadata.csv 
+  174  rm ACSST5Y2020.S1501-Data.csv 
+  175  rm ACSST5Y2020.S1501-Table-Notes.txt 
+  176  ll
+  177  mkdir S1501
+  178  unzip ACSST5Y2020.S1501_2024-10-02T113129.zip S1501/
+  179  unzip ACSST5Y2020.S1501_2024-10-02T113129.zip ./S1501/
+  180  unzip ACSST5Y2020.S1501_2024-10-02T113129.zip ./S1501
+  181  ll
+  182  unzip ACSST5Y2020.S1501_2024-10-02T113129.zip -d S1501
+  183  ll
+  184  mkdir S1901
+  185  unzip ACSST5Y2020.S1901_2024-10-02T113108.zip -d S1901
+  186  mkdir P1
+  187  unzip DECENNIALPL2020.P1_2024-10-02T113014.zip -d S1901
+  188  unzip DECENNIALPL2020.P1_2024-10-02T113014.zip -d P1
+  189  ll
+  190  cd S1901/
+  191  ll
+  192  rm DECENNIALPL2020.P1-Column-Metadata.csv 
+  193  rm DECENNIALPL2020.P1-Data.csv 
+  194  rm DECENNIALPL2020.P1-Table-Notes.txt
+  195  ll
+  196  cd ..
+  197  ll
+  198  cd P1/
+  199  ll
+  200  head DECENNIALPL2020.P1-Column-Metadata.csv 
+  201  head DECENNIALPL2020.P1-Data.csv 
+  202  cat DECENNIALPL2020.P1-Column-Metadata.csv 
+  203  awk -F, 'print $1' DECENNIALPL2020.P1-Data.csv | head -n 10
+  204  awk -F, '{print $1}' DECENNIALPL2020.P1-Data.csv | head -n 10
+  205  awk -F, '{print $2}' DECENNIALPL2020.P1-Data.csv | head -n 10
+  206  awk -F, '{print $4}' DECENNIALPL2020.P1-Data.csv | head -n 10
+  207  cat DECENNIALPL2020.P1-Column-Metadata.csv 
+  208  cd ..
+  209  ll
+  210  head -n 1 Crime_Data_from_2020_to_Present.csv 
+  211  awk -F, '{print $7}' Crime_Data_from_2020_to_Present.csv | head -n 10
+  212  awk -F, '{print $5}' Crime_Data_from_2020_to_Present.csv | head -n 10
+  213  ll
+  214  cd ..
+  215  ll
+  216  mv ./datasets/Crime_Data_from_2020_to_Present.csv .
+  217  ll
+  218  rm -r datasets/
+  219  ll
+  220  head -n 1 2020_Census_Blocks.csv 
+  221  awk -F, '{print $5}' Crime_Data_from_2020_to_Present.csv | head -n 1
+  222  awk -F, '{print $5}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  223  awk -F, '{print $7}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  224  head -n 1 Crime_Data_from_2020_to_Present.csv 
+  225  awk -F, '{print $6}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  226  awk -F, '{print $25}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  227  awk -F, '{print $26}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  228  head -n 1 Crime_Data_from_2020_to_Present.csv 
+  229  awk -F, '{print $27}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  230  awk -F, '{print $3}' Crime_Data_from_2020_to_Present.csv | head -n 20
+  231  awk '$3 ~ /.*\/.*\/2020/ {print $3}' Crime_Data_from_2020_to_Present.csv 
+  232  awk '$3 ~ /.*\/.*\/2020/ {print $0}' Crime_Data_from_2020_to_Present.csv > 2020_Crime_Data.csv
+  233  head 2020_C
+  234  head 2020_Crime_Data.csv 
+  235  head -n 1 2020_Crime_Data.csv 
+  236  awk 'NR==1 || $3 ~ /.*\/.*\/2020/ {print $0}' Crime_Data_from_2020_to_Present.csv > 2020_Crime_Data.csv 
+  237  head 2020_Crime_Data.csv 
+  238  head -n 1 2020_Crime_Data.csv 
+  239  awk -F, '{print $7}' 2020_Crime_Data.csv | head -n 20
+  240  awk 'NR==1 || $11 ~ /Los Angeles/' 2020_Census_Blocks.csv > LA_2020_Census.csv
+  241  head LA_2020_Census.csv 
+  242  cat LA_2020_Census.csv 
+  243  awk 'NR==1 || $11 ~ /Los Angeles/' 2020_Census_Blocks.csv > LA_2020_Census.csv
+  244  cat LA_2020_Census.csv 
+  245  awk -F, '{print $11}' 2020_Census_Blocks.csv | head -n 20
+  246  awk 'NR==1 || $11 ~ /Los Angeles/' 2020_Census_Blocks.csv
+  247  awk 'NR==1 || $11 ~ /Angeles/' 2020_Census_Blocks.csv
+  248  awk 'NR==1 || $11 ~ /"Los Angeles"/' 2020_Census_Blocks.csv | head -n 20
+  249  awk 'NR==1 || $11 ~ "Los Angeles"' 2020_Census_Blocks.csv | head -n 20
+  250  awk 'NR==1 || $11 ~ /Los[[:space:]]Angeles/' 2020_Census_Blocks.csv | head -n 20
+  251  awk 'NR==1 || $11 ~ /Los\vAngeles/' 2020_Census_Blocks.csv | head -n 20
+  252  awk 'NR==1 || $11 ~ /Los\sAngeles/' 2020_Census_Blocks.csv | head -n 20
+  253  awk 'NR==1 || $11 ~ /Angeles/' 2020_Census_Blocks.csv > LA_2020_Census.csv 
+  254  head LA_2020_Census.csv 
+  255  head 2020_Cr
+  256  head 2020_Crime_Data.csv 
+  257  awk -F, 'NR>1 {print $12}' LA_2020_Census.csv | sort | uniq
+  258  awk -F, 'NR>1 {print $20}' LA_2020_Census.csv | sort | uniq
+  259  head -n 1 Crime_Data_from_2020_to_Present.csv 
+  260  awk -F, 'NR>1 {print $20}' LA_2020_Census.csv | sort | uniq
+  261  awk -F, 'NR>1 {print $12}' LA_2020_Census.csv | sort | uniq
+  262  awk -F, 'NR>1 {print $6}'Cr | sort | uniq
+  263  awk -F, 'NR>1 {print $6}' Crime_Data_from_2020_to_Present.csv | sort | uniq
+  264  lh
+  265  cd P1/
+  266  lh
+  267  head 2020_Crime_Data.csv 
+  268  head LA_2020_Census.csv 
+  269  join -t, -1 7 -2 12 <(sort -t, -k7,7 2020_Crime_Data.csv) <(sort -t, -k12,12 LA_2020_Census.csv)
+  270  head 2020_Crime_Data.csv 
+  271  head -n 1 LA_2020_Census.csv 
+  272  join -t, -1 7 -2 12 <(sort -t, -k7,7 2020_Crime_Data.csv) <(sort -t, -k12,12 LA_2020_Census.csv) > Joined_2020_LA_Crime.csv
+  273  head Joined_2020_LA_Crime.csv 
+  274  awk -F, 'NR==FNR{a[$12]; next} $7 in a' {file2} 2020_Crime_Data.csv 
+  275  awk -F, 'NR==FNR{a[$12]; next} $7 in a' LA_2020_Census.csv 2020_Crime_Data.csv 
+  276  awk -F, 'NR>1 {print $12}' LA_2020_Census.csv | head -n 20
+  277  awk -F, 'NR>1 {print $7}' 2020_Crime_Data.csv | head -n 20
+  278  awk -F, 'NR>1 {print $8}' 2020_Crime_Data.csv | head -n 20
+  279  awk -F, 'NR>1 {print $6}' 2020_Crime_Data.csv | head -n 20
+  280  join -t, -1 6 -2 12 <(sort -t, -k6,6 2020_Crime_Data.csv) <(sort -t, -k12,12 LA_2020_Census.csv) > Joined_2020_LA_Crime.csv
+  281  head Joined_2020_LA_Crime.csv 
+  282  (head -n 1 2020_Crime_Data.csv && tail -n +2 2020_Crime_Data.csv | sort -t, -k6,6) > sorted_crime.csv
+  283  (head -n 1 LA_2020_Census.csv && tail -n +2 LA_2020_Census.csv | sort -t, -k12,12) > sorted_census.csv
+  284  join -t, -1 6 -2 12 sorted_crime.csv sorted_census.csv > Joined_2020_LA_Crime.csv
+  285  head Joined_2020_LA_Crime.csv 
+  286  head Joined_2020_LA_Crime.csv
+  287  (head -n 1 2020_Crime_Data.csv && head -n 1 LA_2020_Census.csv | cut -d, -f12) > headers.csv
+  288  join -t, -1 6 -2 12 <(tail -n +2 2020_Crime_Data.csv | sort -t, -k6,6) <(tail -n +2 LA_2020_Census.csv | sort -t, -k12,12) > joined_body.csv
+  289  cat headers.csv joined_body.csv > Joined_2020_LA_Crime.csv
+  290  rm headers.csv joined_body.csv
+  291  head Joined_2020_LA_Crime.csv 
+  292  lhj
+  293  lh
+  294  rm sorted_census.csv
+  295  rm sorted_crime.csv 
+  296  rm Joined_2020_LA_Crime.csv 
+  297  awk -F, 'NR==FNR{a[$12]; next} $6 in a' LA_2020_Census.csv 2020_Crime_Data.csv > filtered.csv
+  298  head filtered.csv 
+  299  awk -F, 'NR==1{print; next} NR==FNR{a[$12]; next} $6 in a' LA_2020_Census.csv 2020_Crime_Data.csv > filtered.csv
+  300  head filtered.csv 
+  301  awk -F, 'NR==1{print; next} NR==FNR{a[$]; next} $6 in a' 2020_Crime_Data.csv LA_2020_Census.csv > filtered_census.csv
+  302  head filtered_census.csv 
+  303  awk -F, 'NR>1 {print $12}' filtered_census.csv | sort | uniq
+  304  head LA_2020_Census.csv 
+  305  rm filtered_census.csv 
+  306  rm filtered.csv 
+  307  head 2020_Crime_Data.csv 
+  308  awk -F, 'NR>1 {print $10}' 2020_Crime_Data.csv | sort | uniq
+  309  awk -F, 'NR>1 {print $9}' 2020_Crime_Data.csv | sort | uniq
+  310  wc -l 2020_Crime_Data.csv 
+  311  h
+  312  lh
+  313  wc -l Crime_Data_from_2020_to_Present.csv 
+  314  awk -F',' 'NR==1 || $12 != ""' Crime_Data_from_2020_to_Present.csv > Crime_Data_No_Missing_Location.csv
+  315  head Crime_Data_No_Missing_Location.csv 
+  316  awk -F, 'NR>1 {print $15}' Crime_Data_No_Missing_Location.csv | sort | uniq
+  317  awk -F, 'NR>1 {print $16}' Crime_Data_No_Missing_Location.csv | sort | uniq
+  318  head Crime_Data_No_Missing_Location.csv 
+  319  awk -F, 'NR>1 {print $18}' Crime_Data_No_Missing_Location.csv | sort | uniq
+  320  awk -F, 'NR>1 {print $20}' Crime_Data_No_Missing_Location.csv | sort | uniq
+  321  head Crime_Data_No_Missing_Location.csv 
+  322  lh
+  323  cd mini-assignments-knaythan/
+  324  lh
+  325  mkdir cohnn_A8
+  326  cd ..
+  327  cd mini-assignments-knaythan/
+  328  rm -r cohnn_A8
+  329  lh
+  330  cd ..
+  331  cd mini-assignments-knaythan/
+  332  lh
+  333  git add cohnn_A8
+  334  git commit -m "Assignment A8"
+  335  git push
+  336  ls
+  337  cd mini-assignments-knaythan/
+  338  git pull origin main
+  339  ls
+  340  mkdir Exam2
+  341  mv house_sales.csv Exam2/
+  342  mv server_log.csv Exam2/
+  343  ls
+  344  cd Exam2/
+  345  ls
+  346  awk -F, '$2 > 400' server_log.csv > User_ID_gt_400.txt
+  347  ls
+  348  awk -F, 'tolower($4) ~ /backup failed/' server_log.csv > error_backup_failed.txt
+  349  ls
+  350  awk -F'\t' '{sum+=$3; count++} END {print sum/count}' house_sales.csv
+  351  sed 's/NULL/N\/A/g' server_log.csv > cleaned_server_log.csv
+  352  ls
+  353  sed '/NULL/d' server_log.csv > server_log_remove_null.csv
+  354  ls
+  355  wc -l server_log_remove_null.csv 
+  356  sed 's/\t/,/g' house_sales.csv > house_comma_separated.csv
+  357  head house_comma_separated.csv 
+  358  head house_sales.csv 
+  359  history > cmd.log
