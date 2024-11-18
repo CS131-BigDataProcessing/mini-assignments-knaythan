@@ -1,4 +1,6 @@
-0 2 * * * rm -rf /mnt/scratch/FA24_CS131_Jessica/ncohnfa24/mini-assignments-knaythan/cohnn_A9/temp/*
-0 3 * * 0 /mnt/scratch/FA24_CS131_Jessica/ncohnfa24/mini-assignments-knaythan/cohnn_A9/backup_home.sh
-df -h | mail -s "Daily Disk Usage Report" nathan.cohn@sjsu.edu
+A.
+1. Log Rotation and Cleanup: Automating the rotation and deletion of old log files can help free up disk space and keep the system organized without manual intervention.
+2. System Updates: You could schedule automatic updates or security patches to keep your system up-to-date and secure, especially if you tend to forget.
 
+B.
+If automated tasks are not managed properly, they could cause problems like accidental data deletion or system overload. For example, a misconfigured backup script might overwrite important data or fail silently, leaving you without a working backup. To avoid this, always test your scripts first, check logs regularly, and set up alerts to notify you if something goes wrong.
