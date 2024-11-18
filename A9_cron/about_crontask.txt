@@ -1,0 +1,4 @@
+0 2 * * * rm -rf /mnt/scratch/FA24_CS131_Jessica/ncohnfa24/mini-assignments-knaythan/cohnn_A9/temp/*
+0 3 * * 0 /mnt/scratch/FA24_CS131_Jessica/ncohnfa24/mini-assignments-knaythan/cohnn_A9/backup_home.sh
+df -h | mail -s "Daily Disk Usage Report" nathan.cohn@sjsu.edu
+
