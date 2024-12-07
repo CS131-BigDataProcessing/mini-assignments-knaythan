@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crime_test
+Version: 1.0.0
+Summary: A package for validating crime data and calculating statistics from a csv
+Author: nathan Cohn
+Author-email: nathan.cohn@sjsu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Requires-Dist: numpy==2.1.3
+Requires-Dist: pandas==2.2.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: setuptools==75.6.0
+Requires-Dist: six==1.17.0
+Requires-Dist: tzdata==2024.2
