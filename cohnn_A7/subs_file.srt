@@ -1,0 +1,3 @@
+s/Delta/Delta_Airlines/g
+s/American/American_Airlines/g
+s/pct_weather_delay/Weather_Delay_Percentage/g
